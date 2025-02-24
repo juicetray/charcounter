@@ -1,0 +1,128 @@
+/* Centering the main content */
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    width: 90%; 
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+#textInput {
+    width: 100%; /* Responsive width */
+    max-width: 786px;
+    height: 200px; /* Default height */
+    max-height: 80vh; 
+    min-height: 150px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Checkboxes and labels container */
+.options {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 786px; 
+    margin-right: 35px; 
+}
+
+/* Stats container (for character count, words, etc.) */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+
+.stat-box {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: 120px;
+    font-weight: bold;
+}
+
+
+#letter-density {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    max-width: 400px;
+}
+
+#letter-density ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#letter-density li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+#letter-density li span {
+    width: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.progress-bar {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.progress-text {
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}

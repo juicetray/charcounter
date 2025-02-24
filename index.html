@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="script.js" async defer></script>
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Character Counter</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="heading">Analyze your text in real-time.</h1>
+
+    <label for="textInput" class="sr-only">Enter text</label>
+    <textarea id="textInput" placeholder="Type or paste your text here..." ></textarea>
+
+    <!-- Options for excluding spaces and setting character limits -->
+    <div class="options">
+      <label><input type="checkbox"> Exclude Spaces</label>
+      <label><input type="checkbox"> Set Character Limit</label>
+    </div>
+
+    <!-- Stats section -->
+    <div class="stats-container">
+      <div class="stat-box" id="total-characters">0 <br> Total Characters</div>
+      <div class="stat-box" id="word-count">0 <br> Word Count</div>
+      <div class="stat-box" id="sentence-count">0 <br> Sentence Count</div>
+    </div>
+
+    <!-- Letter Density -->
+    <div id="letter-density">
+      <h3>Letter Density</h3>
+      <p>No characters found. Start typing to see letter density.</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
